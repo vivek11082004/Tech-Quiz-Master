@@ -1,0 +1,9 @@
+# Set Admin Email for Tech_Quiz
+
+Add this line to your .env file in the backend folder:
+
+ADMIN_EMAIL=your_email@domain.com
+
+Replace your_email@domain.com with the email you want to use as admin (the same email you use to login with Clerk).
+
+After updating, restart your backend server for changes to take effect.

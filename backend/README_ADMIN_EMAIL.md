@@ -1,0 +1,1 @@
+Admin email is now configurable via .env (ADMIN_EMAIL). To set a new admin, update ADMIN_EMAIL in .env and restart backend.
