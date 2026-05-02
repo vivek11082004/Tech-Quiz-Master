@@ -10,7 +10,7 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "@clerk/express": "^2.1.12",
+    "@clerk/clerk-sdk-node": "^5.1.6",
     "cors": "^2.8.6",
     "csv-parse": "^6.2.1",
     "dotenv": "^17.4.1",
