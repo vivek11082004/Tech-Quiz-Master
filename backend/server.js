@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 dotenv.config();
-import { clerkMiddleware } from '@clerk/express'
+import { ClerkExpressWithAuth } from '@clerk/clerk-sdk-node';
 import dns from 'dns';
 import userRoutes from './routes/user.js';
 import adminRoutes from './routes/admin.js';
@@ -22,12 +22,12 @@ dns.setServers(["1.1.1.1","8.8.8.8"])
 
 // Enable CORS for all origins (for development)
 app.use(cors({
-  origin: ["http://localhost:5173", "http://localhost:5174"], // Allow both frontend origins
+  origin: ["https://tech-quiz-master-1.onrender.com", "http://localhost:5173"],
   credentials: true
 }));
 
 // Pass the publishableKey explicitly to Clerk middleware
-app.use(clerkMiddleware({ publishableKey: process.env.CLERK_PUBLISHABLE_KEY }))
+app.use(ClerkExpressWithAuth({ publishableKey: process.env.CLERK_PUBLISHABLE_KEY }));
 // === Place webhook route BEFORE express.json() ===
 app.use(express.json());
 app.use("/api/users", userRoutes); // This contains the webhook route with express.raw()
