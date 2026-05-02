@@ -1,5 +1,5 @@
 import User from "../model/User.js";
-import { getAuth } from "@clerk/express";
+import { getAuth } from "@clerk/clerk-sdk-node";
 
 // To get stats of a user
 export const getStats = async (req, res) => {

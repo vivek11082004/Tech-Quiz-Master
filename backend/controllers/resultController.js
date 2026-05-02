@@ -1,6 +1,6 @@
 import Result from "../model/Result.js";
 import User from "../model/User.js";
-import { getAuth } from "@clerk/express";
+import { getAuth } from "@clerk/clerk-sdk-node";
 
 //  Create a result
 export const CreatemyResult = async (req, res) => {
