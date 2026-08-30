@@ -25,6 +25,7 @@ app.use(cors({
     origin: [
         "https://tech-quiz-master-dzb1.vercel.app",
         "https://tech-quiz-master-1.onrender.com",
+        "https://tech-quiz-master-vert.vercel.app",
         "http://localhost:5173",
         "http://localhost:5174"
     ],
