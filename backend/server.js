@@ -22,12 +22,13 @@ dns.setServers(["1.1.1.1","8.8.8.8"])
 
 // Enable CORS for all origins (for development)
 app.use(cors({
-  origin: [
-    "https://tech-quiz-master-1.onrender.com",
-    "http://localhost:5173",
-    "http://localhost:5174"
-  ],
-  credentials: true
+    origin: [
+        "https://tech-quiz-master-dzb1.vercel.app",
+        "https://tech-quiz-master-1.onrender.com",
+        "http://localhost:5173",
+        "http://localhost:5174"
+    ],
+    credentials: true
 }));
 
 // Pass the publishableKey explicitly to Clerk middleware
