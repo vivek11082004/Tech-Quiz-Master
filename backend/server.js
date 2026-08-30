@@ -22,7 +22,11 @@ dns.setServers(["1.1.1.1","8.8.8.8"])
 
 // Enable CORS for all origins (for development)
 app.use(cors({
-  origin: ["https://tech-quiz-master-1.onrender.com", "http://localhost:5173"],
+  origin: [
+    "https://tech-quiz-master-1.onrender.com",
+    "http://localhost:5173",
+    "http://localhost:5174"
+  ],
   credentials: true
 }));
 

@@ -347,7 +347,7 @@ const Dashboard = () => {
       resetForm();
       // Navigate to quiz giving page after creation
       // After quiz creation, redirect to home/landing page
-      window.location.href = "http://localhost:5173";
+      window.location.href = "http://localhost:5174";
     } catch (err) {
       console.log("UPLOAD ERROR:", err);
 
